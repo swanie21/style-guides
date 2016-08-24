@@ -1,12 +1,18 @@
 #project-one {
   border: 1px solid black;
-  height: 15em;
+  height: 50em;
   margin: auto;
+  margin-top: 2em;
   width: 90%;
 }
 
+h1 {
+  padding: 2em 0 2em 0;
+  text-align: center;
+}
+
 header {
-  background-color: #377946;
+  background-color: #3e5d78;
   display: flex;
   padding: 1em;
 }
@@ -40,6 +46,7 @@ a {
 }
 
 #sign-up-button {
+  font-family: 'Lora', serif;
   font-size: 16px;
   height: 1.8em;
   margin-top: 1em;
@@ -48,8 +55,21 @@ a {
 }
 
 #sign-up-button:hover {
-  background-color: #57b7fc;
+  background-color: #ecc53a;
   cursor: pointer;
+}
+
+#show-code-button {
+  margin-top: 5em;
+}
+
+#code-snippet {
+  text-align: center;
+  width: 100%;
+}
+
+#codepen {
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 650px) {
@@ -66,18 +86,19 @@ a {
     display: block;
   }
   .hidden {
+    font-family: 'Lora', serif;
     position: absolute;
   }
-  .hidden a {
-    text-align: center;
-  }
   .hidden li:hover {
-    background: red;
+    background: #ecc53a;
     height: 1.8em;
     padding: 0.2em;
     line-height: 2em;
   }
   ul li a:hover + .hidden, .hidden:hover {
     display: block;
+  }
+  #sign-up-button {
+    margin-right: 1em;
   }
 }
