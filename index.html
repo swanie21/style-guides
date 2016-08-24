@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width">
     <title>Style Guides</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.scss" type="text/css">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    <header>
+    <section id="project-one">
+      <header>
+        <img src="img/logo.svg" alt="logo-image" />
+        <nav>
+          <ul>
+            <li id="menu-dropdown"><a href="#menu">Menu</a>
+              <ul class="hidden">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </li>
+            <li class="hide-on-mobile"><a href="#products">Products</a></li>
+            <li class="hide-on-mobile"><a href="#about">About</a></li>
+            <li class="hide-on-mobile"><a href="#contact">Contact</a></li>
+          </ul>
+          <button id="sign-up-button">Sign up</button>
+        </nav>
+      <header>
+    </section>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

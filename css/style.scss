@@ -1,0 +1,83 @@
+#project-one {
+  border: 1px solid black;
+  height: 15em;
+  margin: auto;
+  width: 90%;
+}
+
+header {
+  background-color: #377946;
+  display: flex;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  font-family: 'Lora', serif;
+  margin-right: 3em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#menu-dropdown {
+  display: none;
+}
+
+#sign-up-button {
+  font-size: 16px;
+  height: 1.8em;
+  margin-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#sign-up-button:hover {
+  background-color: #57b7fc;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    padding-right: 0.1em;
+  }
+  .hide-on-mobile, .hidden {
+    display: none;
+  }
+  nav {
+    position: relative;
+  }
+  #menu-dropdown {
+    display: block;
+  }
+  .hidden {
+    position: absolute;
+  }
+  .hidden a {
+    text-align: center;
+  }
+  .hidden li:hover {
+    background: red;
+    height: 1.8em;
+    padding: 0.2em;
+    line-height: 2em;
+  }
+  ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+  }
+}
