@@ -1,6 +1,6 @@
 'use strict';
 
-function showCodeSnippet() {
+function hideCodeSnippet() {
   $('#code-snippet').hide();
 }
 
@@ -8,4 +8,8 @@ function showCodeSnippet() {
     $('#code-snippet').show();
   });
 
-  showCodeSnippet();
+  $('#code-snippet').on('mouseleave', function() {
+    hideCodeSnippet();
+  });
+
+  hideCodeSnippet();
