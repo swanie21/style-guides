@@ -1,8 +1,7 @@
 #project-one {
-  border: 1px solid black;
   height: 50em;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 1em;
   width: 90%;
 }
 
@@ -61,6 +60,8 @@ a {
 
 #show-code-button {
   margin-top: 5em;
+  text-align: center;
+  width: 100%;
 }
 
 #code-snippet {
