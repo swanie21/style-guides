@@ -5,3 +5,52 @@
   margin-top: 0.5em;
   width: 90%;
 }
+
+#cards {
+  display: flex;
+  justify-content: center;
+}
+.content-card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 28em;
+  margin: 0 1em 0 1em;
+  padding: 0 1.5em 0 1.5em;
+  width: 25%;
+}
+
+.card-titles {
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+.card-titles {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+.card-description {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding-top: 1em;
+}
+
+.card-link {
+  color: #2d2b91;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  padding: 1em 0 1em 0;
+}
+
+/*@media screen and (max-width: 900px) {
+  #cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .content-card {
+    width: 100%;
+  }
+}*/
