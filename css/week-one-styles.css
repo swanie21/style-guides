@@ -1,5 +1,4 @@
 #project-one {
-  border: 1px dashed black;
   height: 42em;
   margin: auto;
   margin-top: 0.5em;
@@ -63,18 +62,17 @@ a {
   cursor: pointer;
 }
 
-#show-code-button {
+.show-code-button {
   margin-top: 6em;
   text-align: center;
-  width: 100%;
 }
 
-#code-snippet {
+.code-snippet {
   text-align: center;
   width: 100%;
 }
 
-#codepen {
+.codepen {
   margin-top: 1em;
 }
 
