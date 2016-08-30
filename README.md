@@ -1,5 +1,7 @@
 # style-guides
 
+<img src="img/content-cards.png" alt="content cards" height="300px" width="600px">
+
 ##Introduction
 Every week for seven weeks I'll be creating style guides of specific page elements that can be highly reusable. They will incorporate responsive design, HTML, CSS, SASS, and JS.
 
@@ -15,4 +17,4 @@ Week Two: Build a content card
 * Includes a title
 * Includes a description
 * Includes an image
-* Includes a nicely styled link 
+* Includes a nicely styled link
