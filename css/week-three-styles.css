@@ -5,3 +5,82 @@
   margin-top: 0.5em;
   width: 90%;
 }
+
+#accordion-tab {
+  margin: 0 auto;
+  padding: 50px;
+  width: 64%;
+}
+
+article {
+  display: none;
+}
+
+input {
+  display: none;
+  position: relative;
+}
+
+input:checked + label {
+  z-index: 2;
+}
+
+input:checked + label::before {
+  background-color: #41a484;
+}
+
+label {
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  padding: 1.5em 1.5em 1em;
+  margin: -2px;
+  text-align: center;
+  width: 60px;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label::before {
+  background: #8de0c5;
+  border: .1em solid #aaa;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: .5em; left: 0;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+  z-index: -1;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+  display: block;
+}
+
+@media screen and (max-width: 915px) {
+  #accordion-tab {
+    margin: 0 auto;
+    padding: 0;
+    width: 85%;
+  }
+  label {
+    padding: 0.7em;
+  }
+}

@@ -22,5 +22,5 @@ Week Two: Build a content card
 Week Three: Build an accordion tab
 * Responsive design
 * Include titles on each tab
-* Selected tab should be the same color as the background and unselected tabs should be a different color
+* Selected tab should be differentiated from the unselected tabs
 * Selected tab should show the tab's title content, which includes a header and body element

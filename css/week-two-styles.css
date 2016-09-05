@@ -1,6 +1,6 @@
 #project-two {
   border-top: 2px dashed black;
-  height: 70em;
+  height: 140em;
   margin: auto;
   margin-top: 0.5em;
   width: 90%;
@@ -54,6 +54,7 @@
   .content-card {
     display: flex;
     justify-content: center;
+    padding: 1em;
     width: 80%;
   }
 }
