@@ -3,7 +3,7 @@
 <img src="img/content-cards.png" alt="content cards" height="300px" width="600px">
 
 ##Introduction
-Every week for six weeks I'll be creating style guides of specific page elements that can be highly reusable. They will incorporate responsive design, HTML, CSS, SASS, and JS.
+Every week for four weeks I'll be creating style guides of specific page elements that can be highly reusable. They will incorporate responsive design, HTML, CSS, SASS, and JS.
 
 Week One: Build a primary navigation bar
 * Responsive design
@@ -24,3 +24,9 @@ Week Three: Build an accordion tab
 * Include titles on each tab
 * Selected tab should be differentiated from the unselected tabs
 * Selected tab should show the tab's title content, which includes a header and body element
+
+Week Four: Build a footer
+* Responsive design
+* Includes an icon placeholder for the logo
+* Includes placeholder links for site navigation, social media links, terms & conditions, and privacy policy
+* Copyright blurb

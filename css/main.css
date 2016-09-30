@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#project-one {
+  height: 42em;
+  margin: auto;
+  margin-top: 0.5em;
+  width: 90%;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  padding: 2em 0 2em 0;
+  text-align: center;
+}
+
+header {
+  background-color: #3e5d78;
+  display: flex;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  margin-right: 3em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#menu-dropdown {
+  display: none;
+}
+
+#sign-up-button {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 16px;
+  height: 1.8em;
+  margin-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#sign-up-button:hover {
+  background-color: #ecc53a;
+  cursor: pointer;
+}
+
+.show-code-button {
+  margin-top: 6em;
+  text-align: center;
+}
+
+.code-snippet {
+  text-align: center;
+  width: 100%;
+}
+
+.codepen {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    padding-right: 0.1em;
+  }
+
+  .hide-on-mobile, .hidden {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  #menu-dropdown {
+    display: block;
+    padding: 0 1em 0 0;
+  }
+
+  .hidden {
+    background: #ecc53a;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    line-height: 2.5em;
+    padding: 0.2em;
+    position: absolute;
+    width: 5.5em;
+  }
+
+  .hidden li:hover {
+    background: #e0995e;
+    width: 5.5em;
+  }
+
+  ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+  }
+
+  #sign-up-button {
+    margin-right: 1em;
+  }
+}
+#project-two {
+  border-top: 2px dashed black;
+  height: 140em;
+  margin: auto;
+  margin-top: 0.5em;
+  width: 90%;
+}
+
+#cards {
+  display: flex;
+  justify-content: center;
+}
+
+.content-card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 32em;
+  margin: 0 0.6em 0 0.6em;
+  padding: 0 1.3em 0 1.3em;
+  width: 28%;
+}
+
+.card-titles {
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+.card-titles {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+.card-description {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding-top: 1em;
+}
+
+.card-link {
+  color: #2d2b91;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  padding: 1em 0 1em 0;
+}
+
+@media screen and (max-width: 915px) {
+  #cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .content-card {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    width: 80%;
+  }
+}
+#project-three {
+  border-top: 2px dashed black;
+  height: 42em;
+  margin: auto;
+  margin-top: 0.5em;
+  width: 90%;
+}
+
+#accordion-tab {
+  margin: 0 auto;
+  padding: 50px;
+  width: 64%;
+}
+
+article {
+  display: none;
+}
+
+input {
+  display: none;
+  position: relative;
+}
+
+input:checked + label {
+  z-index: 2;
+}
+
+input:checked + label::before {
+  background-color: #41a484;
+}
+
+label {
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  padding: 1.5em 1.5em 1em;
+  margin: -2px;
+  text-align: center;
+  width: 60px;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label::before {
+  background: #8de0c5;
+  border: .1em solid #aaa;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: .5em;
+  left: 0;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+  z-index: -1;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+  display: block;
+}
+
+@media screen and (max-width: 915px) {
+  #accordion-tab {
+    margin: 0 auto;
+    padding: 0;
+    width: 85%;
+  }
+
+  label {
+    padding: 0.7em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
