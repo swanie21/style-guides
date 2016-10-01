@@ -1,19 +1,10 @@
 #project-one {
+  @include project-container;
   height: 42em;
-  margin: auto;
-  margin-top: 0.5em;
-  width: 90%;
-}
-
-h1 {
-  font-family: 'Lora', serif;
-  font-weight: 400;
-  padding: 2em 0 2em 0;
-  text-align: center;
 }
 
 header {
-  background-color: #3e5d78;
+  background-color: $primary-blue-color;
   display: flex;
   padding: 1em;
 }
@@ -22,25 +13,21 @@ nav {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-}
-
-nav ul {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 nav li {
-  font-family: 'Lora', serif;
-  font-weight: 700;
+  font: {
+    family: $font-lora;
+    weight: 700;
+  }
   margin-right: 3em;
   position: relative;
   text-transform: uppercase;
-}
-
-a {
-  color: black;
-  text-decoration: none;
 }
 
 #menu-dropdown {
@@ -48,64 +35,61 @@ a {
 }
 
 #sign-up-button {
-  font-family: 'Lora', serif;
-  font-weight: 700;
-  font-size: 16px;
+  @include box-shadow;
+  font: {
+    family: $font-lora;
+    size: 16px;
+    weight: 700;
+  }
   height: 1.8em;
   margin-top: 1em;
   text-align: center;
   text-transform: uppercase;
-}
-
-#sign-up-button:hover {
-  background-color: #ecc53a;
-  cursor: pointer;
-}
-
-.show-code-button {
-  margin-top: 6em;
-  text-align: center;
-}
-
-.code-snippet {
-  text-align: center;
-  width: 100%;
-}
-
-.codepen {
-  margin-top: 1em;
+  &:hover {
+    background-color: lighten($primary-blue-color, 25%);
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 650px) {
   header {
     padding-right: 0.1em;
   }
+
   .hide-on-mobile, .hidden {
     display: none;
   }
+
   nav {
     position: relative;
   }
+
   #menu-dropdown {
     display: block;
-    padding: 0 1em 0 0;
   }
+
   .hidden {
     background: #ecc53a;
-    font-family: 'Lora', serif;
+    font-family: $font-lora;
     font-weight: 700;
     line-height: 2.5em;
     padding: 0.2em;
     position: absolute;
-    width: 5.5em;
+    width: 5.4em;
   }
-  .hidden li:hover {
+
+  .hidden li {
+    font-size: 14px;
+    padding-left: 4px;
+    &:hover {
     background: #e0995e;
-    width: 5.5em;
+    width: 5.9em;
+    }
   }
   ul li a:hover + .hidden, .hidden:hover {
     display: block;
   }
+
   #sign-up-button {
     margin-right: 1em;
   }

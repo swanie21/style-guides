@@ -1,9 +1,7 @@
 #project-three {
+  @include project-container;
   border-top: 2px dashed black;
-  height: 42em;
-  margin: auto;
-  margin-top: 0.5em;
-  width: 90%;
+  height: 51em;
 }
 
 #accordion-tab {
@@ -26,11 +24,12 @@ input:checked + label {
 }
 
 input:checked + label::before {
-  background-color: #41a484;
+  background-color: lighten($primary-blue-color, 25%);
 }
 
 label {
   display: inline-block;
+  font-family: $font-lora;
   font-weight: 600;
   position: relative;
   padding: 1.5em 1.5em 1em;
@@ -44,7 +43,7 @@ label:hover {
 }
 
 label::before {
-  background: #8de0c5;
+  background: $primary-blue-color;
   border: .1em solid #aaa;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
@@ -57,14 +56,16 @@ label::before {
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+  font: {
+    family: $font-roboto;
+    size: 20px;
+    weight: 700;
+  }
   margin: 10px 0 10px 0;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-roboto;
   line-height: 1.5;
 }
 
@@ -78,9 +79,10 @@ p {
   #accordion-tab {
     margin: 0 auto;
     padding: 0;
-    width: 85%;
+    width: 100%;
   }
   label {
-    padding: 0.7em;
+    font-size: 15px;
+    padding: 1.5em 1.2em 1em;
   }
 }

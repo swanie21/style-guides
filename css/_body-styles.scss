@@ -1,0 +1,30 @@
+body {
+  background-color: #f6f0e8;
+}
+
+h1 {
+  font-family: $font-lora;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  padding: 2em 0 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  @include link-format;
+}
+
+.show-code-button {
+  @include code-button;
+}
+
+.code-snippet {
+  @include code-snippet-format;
+  height: 345px;
+}
+
+.codepen {
+  margin-top: 1em;
+}

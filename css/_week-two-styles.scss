@@ -1,0 +1,61 @@
+#project-two {
+  @include project-container;
+  border-top: 2px dashed black;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-card {
+  background-color: lighten($primary-blue-color, 50%);
+  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  margin-bottom: 2em;
+  width: 350px;
+}
+
+.card-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-family: $font-lora;
+  margin-top: 0.8em;
+  text-align: center;
+}
+
+.card-link {
+  color: lighten(#000, 30%);
+  font: {
+    family: $font-roboto;
+    weight: bold;
+  }
+  padding: 0.5em;
+  text-decoration: none;
+  &:hover {
+    color: $primary-blue-color;
+    cursor: pointer;
+  }
+}
+
+.card-description {
+  font-family: $font-roboto;
+  line-height: 1.5em;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+#code-snippet-two {
+  margin-bottom: 2.5em;
+}
+
+@media screen and (max-width: 414px) {
+  .content-card {
+    width: 100%;
+  }
+}

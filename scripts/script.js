@@ -1,15 +1,15 @@
 'use strict';
 
-function hideCodeSnippet() {
-  $('.code-snippet').hide();
-}
+// function hideCodeSnippet() {
+//   $('.code-snippet').hide();
+// }
+//
+//   $('.show-code-button').on('click', function() {
+//     $('.code-snippet').show();
+//   });
+//
+//   $('.code-snippet').on('mouseleave', function() {
+//     hideCodeSnippet();
+//   });
 
-  $('.show-code-button').on('click', function() {
-    $('.code-snippet').show();
-  });
-
-  $('.code-snippet').on('mouseleave', function() {
-    hideCodeSnippet();
-  });
-
-  hideCodeSnippet();
+  // hideCodeSnippet();

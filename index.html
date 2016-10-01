@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Style Guides</title>
-    <!-- <link rel="stylesheet" href="css/reset.css" type="text/css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/week-one-styles.css" href="css/week-two-styles.css" href="css/week-three-styles.css" type="text/css"> -->
-    <!-- <link rel="stylesheet" href="css/week-two-styles.css" type="text/css"> -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
   <body>
+
     <section id="project-one">
       <h1>Week 1 - Primary Navigation Bar</h1>
       <header>
-        <img src="img/logo.svg" alt="logo-image" />
+        <img id="logo" src="img/logo.svg" alt="logo-image" />
         <nav>
           <ul>
             <li id="menu-dropdown"><a href="#menu">Menu</a>
@@ -39,35 +35,52 @@
         <p class="codepen" data-height="345" data-theme-id="dark" data-slug-hash="VjJpqA" data-default-tab="html" data-user="swanie21" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/swanie21/pen/VjJpqA/">Style Guide #1</a> by Kirsten Swanson  (<a href="http://codepen.io/swanie21">@swanie21</a>) on <a href="http://codepen.io">CodePen</a>.</p>
       </section>
     </section>
+
     <section id="project-two">
-      <h1>Week 2 - Content Card</h1>
+      <h1>Week 2 - Content Cards</h1>
       <section id="cards">
-        <section class="content-card">
-          <h3 class="card-titles">Title</h3>
-          <img src="img/abstract.png" alt="image placeholder" />
-          <p class="card-description">A content card is a way to display different content, but in the same format. Cards have the same properties such as a title, image and description.</p>
-          <p class="card-link"><a class="card-link" href="http://www.w3schools.com/w3css/w3css_cards.asp" target="_blank">More information on content cards</a></p>
-        </section>
-        <section class="content-card">
-          <h3 class="card-titles">Title</h3>
-          <img src="img/abstract2.png" alt="image placeholder" />
-          <p class="card-description">A content card is a way to display different content, but in the same format. Cards have the same properties such as a title, image and description.</p>
-          <p class="card-link"><a class="card-link" href="http://www.w3schools.com/w3css/w3css_cards.asp" target="_blank">More information on content cards</a></p>
-        </section>
-        <section class="content-card">
-          <h3 class="card-titles">Title</h3>
-          <img src="img/abstract3.png" alt="image placeholder" />
-          <p class="card-description">A content card is a way to display different content, but in the same format. Cards have the same properties such as a title, image and description.</p>
-          <p class="card-link"><a class="card-link" href="http://www.w3schools.com/w3css/w3css_cards.asp" target="_blank">More information on content cards</a></p>
-        </section>
+        <article class="content-card">
+          <div class="card-image">
+            <img src="img/flower.png" alt="flower" />
+          </div>
+          <h2 class="card-title">Content Card</h2>
+          <p class="card-description">
+            A content card is a way to display different content, but in the same format. Cards have the same properties such as a title, image and description.
+          </p>
+          <p class="card-link"><a class="card-link" href="http://www.w3schools.com/w3css/w3css_cards.asp" target="_blank">More information on content cards</a>
+          </p>
+        </article>
+        <article class="content-card">
+          <div class="card-image">
+            <img src="img/flower2.png" alt="flower" />
+          </div>
+          <h2 class="card-title">Content Card</h2>
+          <p class="card-description">
+            A content card is a way to display different content, but in the same format. Cards have the same properties such as a title, image and description.
+          </p>
+          <p class="card-link"><a class="card-link" href="http://www.w3schools.com/w3css/w3css_cards.asp" target="_blank">More information on content cards</a>
+          </p>
+        </article>
+        <article class="content-card">
+          <div class="card-image">
+            <img src="img/flower3.png" alt="flower" />
+          </div>
+          <h2 class="card-title">Content Card</h2>
+          <p class="card-description">
+            A content card is a way to display different content, but in the same format. Cards have the same properties such as a title, image and description.
+          </p>
+          <p class="card-link"><a class="card-link" href="http://www.w3schools.com/w3css/w3css_cards.asp" target="_blank">More information on content cards</a>
+          </p>
+        </article>
       </section>
       <section class="show-code-button">
         <button style="background-color:#ababb0">Show code</button>
       </section>
-      <section class="code-snippet">
+      <section id="code-snippet-two" class="code-snippet">
         <p data-height="345" data-theme-id="dark" data-slug-hash="amodJg" data-default-tab="html,result" data-user="swanie21" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/swanie21/pen/amodJg/">Style Guide #2</a> by Kirsten Swanson  (<a href="http://codepen.io/swanie21">@swanie21</a>) on <a href="http://codepen.io">CodePen</a>.</p>
       </section>
     </section>
+
     <section id="project-three">
       <h1>Week 3 - Accordion Tab</h1>
       <section id="accordion-tab">
@@ -86,7 +99,7 @@
         <article id="content2">
           <h2>Why I Like Pigs</h2>
           <p>
-            Pigs are smart animals and one of my favorite animals. Even though they roll around in mud they're still cute in my opinion. I would like a teacup pig even though you don't know how big it will really grow to.
+            Pigs are smart animals and one of my favorite animals. Even though they roll around in mud they're still cute in my opinion. I would like a teacup pig even though you don't know how big it will grow.
           </p>
         </article>
         <article id="content3">
@@ -102,6 +115,9 @@
       <section class="code-snippet">
         <p data-height="345" data-theme-id="dark" data-slug-hash="ALjVNB" data-default-tab="html" data-user="swanie21" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/swanie21/pen/ALjVNB/">Style Guide #3</a> by Kirsten Swanson  (<a href="http://codepen.io/swanie21">@swanie21</a>) on <a href="http://codepen.io">CodePen</a>.</p>
       </section>
+    </section>
+
+    <section id="project-four">
     </section>
 
     <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
