@@ -15,22 +15,108 @@ footer {
   justify-content: flex-start;
 }
 
-#footer-nav-links li {
-  font-family: $font-roboto;
-  margin: 0;
-  margin-left: 1.5em;
+#footer-nav-links {
+  a {
+    color: $footer-text-color;
+    &:hover {
+      color: lighten($primary-blue-color, 25%);
+    }
+  }
+  li {
+    font-family: $font-roboto;
+    margin: 0;
+    margin-left: 1.5em;
+  }
 }
 
-#legal-information li {
-  display: inline-block;
-  font-family: $font-roboto;
+#legal-information {
+  display: flex;
+  a {
+    color: $footer-text-color;
+    font-family: $font-roboto;
+    &:hover {
+      color: lighten($primary-blue-color, 25%);
+    }
+  }
+  ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 270px;
+  }
+}
+
+#privacy-policy {
+  margin: 0 0.5em 0 1.2em;
 }
 
 #social-media-links {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  display: inline-block;
-  width: 18%;
-  height: 100%;
+}
+
+.social-media {
+  margin-left: 0.5em;
+}
+
+#copyright {
+  background-color: $primary-blue-color;
+  color: $footer-text-color;
+  float: left;
+  padding-bottom: 0.5em;
+  text-indent: 1em;
+  width: 100%;
+}
+
+@media screen and (max-width: 930px) {
+  footer {
+    flex-direction: column;
+  }
+
+  #legal-information, #footer-nav {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  #footer-nav {
+    margin-top: 1em;
+  }
+
+  #footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #legal-information ul, #footer-nav-links, #social-media-links {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #legal-information ul, #footer-nav-links {
+    flex-direction: column;
+  }
+
+  #footer-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #privacy-policy {
+    margin-left: 0;
+  }
+
+  .social-media {
+    margin: 0 0.5em 0 0;
+  }
+
+  #footer-nav-links li, #legal-information li {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
 }

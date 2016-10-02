@@ -76,6 +76,15 @@ a {
   margin-top: 6em;
   text-align: center;
 }
+.show-code-button button {
+  background-color: #3e5d78;
+  border-color: #1b2935 #2d4356;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.show-code-button button:hover {
+  background-color: #7b9dbb;
+}
 .show-code-button button:focus {
   outline: none;
 }
@@ -120,6 +129,10 @@ nav li {
   margin-right: 3em;
   position: relative;
   text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #7b9dbb;
 }
 
 #menu-dropdown {
@@ -359,24 +372,107 @@ footer {
   justify-content: flex-start;
 }
 
+#footer-nav-links a {
+  color: #d8d9d8;
+}
+#footer-nav-links a:hover {
+  color: #7b9dbb;
+}
 #footer-nav-links li {
   font-family: "Roboto", sans-serif;
   margin: 0;
   margin-left: 1.5em;
 }
 
-#legal-information li {
-  display: inline-block;
+#legal-information {
+  display: flex;
+}
+#legal-information a {
+  color: #d8d9d8;
   font-family: "Roboto", sans-serif;
+}
+#legal-information a:hover {
+  color: #7b9dbb;
+}
+#legal-information ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+}
+
+#privacy-policy {
+  margin: 0 0.5em 0 1.2em;
 }
 
 #social-media-links {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  display: inline-block;
-  width: 18%;
-  height: 100%;
+}
+
+.social-media {
+  margin-left: 0.5em;
+}
+
+#copyright {
+  background-color: #3e5d78;
+  color: #d8d9d8;
+  float: left;
+  padding-bottom: 0.5em;
+  text-indent: 1em;
+  width: 100%;
+}
+
+@media screen and (max-width: 930px) {
+  footer {
+    flex-direction: column;
+  }
+
+  #legal-information, #footer-nav {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  #footer-nav {
+    margin-top: 1em;
+  }
+
+  #footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  #legal-information ul, #footer-nav-links, #social-media-links {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #legal-information ul, #footer-nav-links {
+    flex-direction: column;
+  }
+
+  #footer-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #privacy-policy {
+    margin-left: 0;
+  }
+
+  .social-media {
+    margin: 0 0.5em 0 0;
+  }
+
+  #footer-nav-links li, #legal-information li {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

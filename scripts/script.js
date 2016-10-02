@@ -4,12 +4,12 @@
 //   $('.code-snippet').hide();
 // }
 //
-//   $('.show-code-button').on('click', function() {
-//     $('.code-snippet').show();
-//   });
+// $('.show-code-button').on('click', function() {
+//   $('.code-snippet').show();
+// });
 //
-//   $('.code-snippet').on('mouseleave', function() {
-//     hideCodeSnippet();
-//   });
-
-  // hideCodeSnippet();
+// $('.code-snippet').on('mouseleave', function() {
+//   hideCodeSnippet();
+// });
+//
+// hideCodeSnippet();

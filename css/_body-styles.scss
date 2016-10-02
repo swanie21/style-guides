@@ -17,6 +17,15 @@ a {
 }
 
 .show-code-button {
+  button {
+    background-color: $primary-blue-color;
+    border-color: darken($primary-blue-color, 20%) darken($primary-blue-color, 10%);
+    font-family: $font-roboto;
+    font-size: 14px;
+    &:hover {
+      background-color: lighten($primary-blue-color, 25%);
+    }
+  }
   @include code-button;
 }
 
