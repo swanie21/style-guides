@@ -78,6 +78,7 @@ a {
 #show-code-button-four {
   margin-top: 6em;
   text-align: center;
+  margin-bottom: 2em;
 }
 #show-code-button-one button:focus,
 #show-code-button-two button:focus,
@@ -102,6 +103,10 @@ a {
   cursor: pointer;
 }
 
+#show-code-button-four {
+  margin-top: 8em;
+}
+
 #code-snippet-one,
 #code-snippet-two,
 #code-snippet-three,
@@ -109,18 +114,13 @@ a {
   text-align: center;
   width: 100%;
   height: 345px;
-  margin-top: 1em;
-}
-
-#code-snippet-four {
-  margin-bottom: 2em;
+  margin: 1em 0 2em 0;
 }
 
 #project-one {
   margin: auto;
   margin-top: 0.5em;
   width: 89%;
-  height: 44em;
 }
 
 header {
@@ -288,12 +288,10 @@ nav a:hover {
   margin-top: 0.5em;
   width: 89%;
   border-top: 2px dashed black;
-  height: 52em;
 }
 
 #accordion-tab {
   margin: 0 auto;
-  padding: 50px;
   width: 64%;
 }
 
@@ -364,10 +362,6 @@ p {
 }
 
 @media screen and (max-width: 915px) {
-  #project-three {
-    height: 48em;
-  }
-
   #accordion-tab {
     margin: 0 auto;
     padding: 0;
@@ -379,17 +373,11 @@ p {
     padding: 1.5em 1.2em 1em;
   }
 }
-@media screen and (max-width: 415px) {
-  #project-three {
-    height: 50em;
-  }
-}
 #project-four {
   margin: auto;
   margin-top: 0.5em;
   width: 89%;
   border-top: 2px dashed black;
-  height: 50em;
 }
 
 footer {

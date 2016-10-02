@@ -21,6 +21,7 @@ a {
 #show-code-button-three,
 #show-code-button-four {
   @include code-button;
+  margin-bottom: 2em;
   button {
     background-color: lighten($primary-blue-color, 10%);
     color: $link-text-color;
@@ -33,15 +34,15 @@ a {
   }
 }
 
+#show-code-button-four {
+  margin-top: 8em;
+}
+
 #code-snippet-one,
 #code-snippet-two,
 #code-snippet-three,
 #code-snippet-four {
   @include code-snippet-format;
   height: 345px;
-  margin-top: 1em;
-}
-
-#code-snippet-four {
-  margin-bottom: 2em;
+  margin: 1em 0 2em 0;
 }

@@ -1,12 +1,10 @@
 #project-three {
   @include project-container;
   border-top: 2px dashed black;
-  height: 52em;
 }
 
 #accordion-tab {
   margin: 0 auto;
-  padding: 50px;
   width: 64%;
 }
 
@@ -76,10 +74,6 @@ p {
 }
 
 @media screen and (max-width: 915px) {
-  #project-three {
-    height: 48em;
-  }
-
   #accordion-tab {
     margin: 0 auto;
     padding: 0;
@@ -88,11 +82,5 @@ p {
   label {
     font-size: 15px;
     padding: 1.5em 1.2em 1em;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  #project-three {
-    height: 50em;
   }
 }
