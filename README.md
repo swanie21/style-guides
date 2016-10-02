@@ -12,21 +12,21 @@ Week One: Build a primary navigation bar
 * Includes a sign-up button
 * Includes an icon placeholder for the logo
 
-Week Two: Build a content card
-* Responsive design
-* Includes a title
-* Includes a description
-* Includes an image
-* Includes a nicely styled link
-
-Week Three: Build an accordion tab
+Week Two: Build an accordion tab
 * Responsive design
 * Include titles on each tab
 * Selected tab should be differentiated from the unselected tabs
 * Selected tab should show the tab's title content, which includes a header and body element
 
-Week Four: Build a footer
+Week Three: Build a footer
 * Responsive design
 * Includes an icon placeholder for the logo
 * Includes placeholder links for site navigation, social media links, terms & conditions, and privacy policy
 * Copyright blurb
+
+Week Four: Build a content card
+* Responsive design
+* Includes a title
+* Includes a description
+* Includes an image
+* Includes a nicely styled link
