@@ -1,4 +1,36 @@
 #project-four {
   @include project-container;
   border-top: 2px dashed black;
+  height: 42em;
+}
+
+footer {
+  background-color: $primary-blue-color;
+  display: flex;
+  padding: 1em;
+}
+
+#footer-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#footer-nav-links li {
+  font-family: $font-roboto;
+  margin: 0;
+  margin-left: 1.5em;
+}
+
+#legal-information li {
+  display: inline-block;
+  font-family: $font-roboto;
+}
+
+#social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  width: 18%;
+  height: 100%;
 }
