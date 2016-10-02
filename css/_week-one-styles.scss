@@ -21,6 +21,9 @@ nav {
 }
 
 nav li {
+  a {
+    color: $link-text-color;
+  }
   font: {
     family: $font-lora;
     weight: 700;
@@ -40,6 +43,8 @@ nav a:hover {
 
 #sign-up-button {
   @include box-shadow;
+  background-color: lighten($primary-blue-color, 20%);
+  color: $link-text-color;
   font: {
     family: $font-lora;
     size: 16px;
@@ -50,7 +55,7 @@ nav a:hover {
   text-align: center;
   text-transform: uppercase;
   &:hover {
-    background-color: lighten($primary-blue-color, 25%);
+    background-color: darken($primary-blue-color, 5%);
     cursor: pointer;
   }
 }

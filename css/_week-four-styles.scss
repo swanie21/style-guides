@@ -17,7 +17,7 @@ footer {
 
 #footer-nav-links {
   a {
-    color: $footer-text-color;
+    color: $link-text-color;
     &:hover {
       color: lighten($primary-blue-color, 25%);
     }
@@ -32,7 +32,7 @@ footer {
 #legal-information {
   display: flex;
   a {
-    color: $footer-text-color;
+    color: $link-text-color;
     font-family: $font-roboto;
     &:hover {
       color: lighten($primary-blue-color, 25%);
@@ -62,7 +62,7 @@ footer {
 
 #copyright {
   background-color: $primary-blue-color;
-  color: $footer-text-color;
+  color: $link-text-color;
   float: left;
   padding-bottom: 0.5em;
   text-indent: 1em;

@@ -77,13 +77,14 @@ a {
   text-align: center;
 }
 .show-code-button button {
-  background-color: #3e5d78;
-  border-color: #1b2935 #2d4356;
-  font-family: "Roboto", sans-serif;
+  background-color: #4f779a;
+  color: #d8d9d8;
+  font-family: "Lora", serif;
   font-size: 14px;
 }
 .show-code-button button:hover {
-  background-color: #7b9dbb;
+  background-color: #355067;
+  cursor: pointer;
 }
 .show-code-button button:focus {
   outline: none;
@@ -130,6 +131,9 @@ nav li {
   position: relative;
   text-transform: uppercase;
 }
+nav li a {
+  color: #d8d9d8;
+}
 
 nav a:hover {
   color: #7b9dbb;
@@ -143,6 +147,8 @@ nav a:hover {
   -moz-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #6a90b2;
+  color: #d8d9d8;
   font-family: "Lora", serif;
   font-size: 16px;
   font-weight: 700;
@@ -152,7 +158,7 @@ nav a:hover {
   text-transform: uppercase;
 }
 #sign-up-button:hover {
-  background-color: #7b9dbb;
+  background-color: #355067;
   cursor: pointer;
 }
 
