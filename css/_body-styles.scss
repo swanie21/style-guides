@@ -16,7 +16,11 @@ a {
   @include link-format;
 }
 
-#show-code-button-one, #show-code-button-two, #show-code-button-three, #show-code-button-four {
+#show-code-button-one,
+#show-code-button-two,
+#show-code-button-three,
+#show-code-button-four {
+  @include code-button;
   button {
     background-color: lighten($primary-blue-color, 10%);
     color: $link-text-color;
@@ -27,14 +31,17 @@ a {
       cursor: pointer;
     }
   }
-  @include code-button;
 }
 
-#code-snippet-one, #code-snippet-two, #code-snippet-three, #code-snippet-four {
+#code-snippet-one,
+#code-snippet-two,
+#code-snippet-three,
+#code-snippet-four {
   @include code-snippet-format;
   height: 345px;
+  margin-top: 1em;
 }
 
-.codepen {
-  margin-top: 1em;
+#code-snippet-four {
+  margin-bottom: 2em;
 }
