@@ -16,7 +16,7 @@ a {
   @include link-format;
 }
 
-.show-code-button {
+#show-code-button-one, #show-code-button-two, #show-code-button-three, #show-code-button-four {
   button {
     background-color: lighten($primary-blue-color, 10%);
     color: $link-text-color;
@@ -30,7 +30,7 @@ a {
   @include code-button;
 }
 
-.code-snippet {
+#code-snippet-one, #code-snippet-two, #code-snippet-three, #code-snippet-four {
   @include code-snippet-format;
   height: 345px;
 }

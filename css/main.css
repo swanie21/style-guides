@@ -72,25 +72,25 @@ a {
   text-decoration: none;
 }
 
-.show-code-button {
+#show-code-button-one, #show-code-button-two, #show-code-button-three, #show-code-button-four {
   margin-top: 6em;
   text-align: center;
 }
-.show-code-button button {
+#show-code-button-one button, #show-code-button-two button, #show-code-button-three button, #show-code-button-four button {
   background-color: #4f779a;
   color: #d8d9d8;
   font-family: "Lora", serif;
   font-size: 14px;
 }
-.show-code-button button:hover {
+#show-code-button-one button:hover, #show-code-button-two button:hover, #show-code-button-three button:hover, #show-code-button-four button:hover {
   background-color: #355067;
   cursor: pointer;
 }
-.show-code-button button:focus {
+#show-code-button-one button:focus, #show-code-button-two button:focus, #show-code-button-three button:focus, #show-code-button-four button:focus {
   outline: none;
 }
 
-.code-snippet {
+#code-snippet-one, #code-snippet-two, #code-snippet-three, #code-snippet-four {
   text-align: center;
   width: 100%;
   height: 345px;
@@ -211,6 +211,67 @@ nav a:hover {
   margin-top: 0.5em;
   width: 89%;
   border-top: 2px dashed black;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-card {
+  background-color: #cfdbe6;
+  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  margin-bottom: 2em;
+  width: 350px;
+}
+
+.card-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-family: "Lora", serif;
+  margin-top: 0.8em;
+  text-align: center;
+}
+
+.card-link {
+  color: #4d4d4d;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 0.5em;
+  text-decoration: none;
+}
+.card-link:hover {
+  color: #3e5d78;
+  cursor: pointer;
+}
+
+.card-description {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5em;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+#code-snippet-two {
+  margin-bottom: 2.5em;
+}
+
+@media screen and (max-width: 414px) {
+  .content-card {
+    width: 100%;
+  }
+}
+#project-three {
+  margin: auto;
+  margin-top: 0.5em;
+  width: 89%;
+  border-top: 2px dashed black;
   height: 51em;
 }
 
@@ -298,7 +359,7 @@ p {
     padding: 1.5em 1.2em 1em;
   }
 }
-#project-three {
+#project-four {
   margin: auto;
   margin-top: 0.5em;
   width: 89%;
@@ -417,67 +478,6 @@ footer {
   #footer-nav-links li, #legal-information li {
     margin-left: 0;
     margin-bottom: 1em;
-  }
-}
-#project-four {
-  margin: auto;
-  margin-top: 0.5em;
-  width: 89%;
-  border-top: 2px dashed black;
-}
-
-#cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.content-card {
-  background-color: #cfdbe6;
-  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  height: 420px;
-  margin-bottom: 2em;
-  width: 350px;
-}
-
-.card-image {
-  height: 250px;
-  overflow: hidden;
-}
-
-.card-title {
-  font-family: "Lora", serif;
-  margin-top: 0.8em;
-  text-align: center;
-}
-
-.card-link {
-  color: #4d4d4d;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  padding: 0.5em;
-  text-decoration: none;
-}
-.card-link:hover {
-  color: #3e5d78;
-  cursor: pointer;
-}
-
-.card-description {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5em;
-  padding: 0.5em 1em 0.5em 1em;
-}
-
-#code-snippet-two {
-  margin-bottom: 2.5em;
-}
-
-@media screen and (max-width: 414px) {
-  .content-card {
-    width: 100%;
   }
 }
 

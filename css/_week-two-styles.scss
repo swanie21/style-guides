@@ -1,88 +1,61 @@
 #project-two {
   @include project-container;
   border-top: 2px dashed black;
-  height: 51em;
 }
 
-#accordion-tab {
-  margin: 0 auto;
-  padding: 50px;
-  width: 64%;
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-article {
-  display: none;
+.content-card {
+  background-color: lighten($primary-blue-color, 50%);
+  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  margin-bottom: 2em;
+  width: 350px;
 }
 
-input {
-  display: none;
-  position: relative;
+.card-image {
+  height: 250px;
+  overflow: hidden;
 }
 
-input:checked + label {
-  z-index: 2;
-}
-
-input:checked + label::before {
-  background-color: lighten($primary-blue-color, 25%);
-}
-
-label {
-  display: inline-block;
+.card-title {
   font-family: $font-lora;
-  font-weight: 600;
-  position: relative;
-  padding: 1.5em 1.5em 1em;
-  margin: -2px;
+  margin-top: 0.8em;
   text-align: center;
-  width: 60px;
 }
 
-label:hover {
-  cursor: pointer;
-}
-
-label::before {
-  background: $primary-blue-color;
-  border: .1em solid #aaa;
-  border-bottom: none;
-  border-radius: 10px 10px 0 0;
-  content: '';
-  position: absolute;
-  top: 0; right: 0; bottom: .5em; left: 0;
-  transform: perspective(5px) rotateX(2deg);
-  transform-origin: bottom;
-  z-index: -1;
-}
-
-h2 {
+.card-link {
+  color: lighten(#000, 30%);
   font: {
     family: $font-roboto;
-    size: 20px;
-    weight: 700;
+    weight: bold;
   }
-  margin: 10px 0 10px 0;
+  padding: 0.5em;
+  text-decoration: none;
+  &:hover {
+    color: $primary-blue-color;
+    cursor: pointer;
+  }
 }
 
-p {
+.card-description {
   font-family: $font-roboto;
-  line-height: 1.5;
+  line-height: 1.5em;
+  padding: 0.5em 1em 0.5em 1em;
 }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3 {
-  display: block;
+#code-snippet-two {
+  margin-bottom: 2.5em;
 }
 
-@media screen and (max-width: 915px) {
-  #accordion-tab {
-    margin: 0 auto;
-    padding: 0;
+@media screen and (max-width: 414px) {
+  .content-card {
     width: 100%;
-  }
-  label {
-    font-size: 15px;
-    padding: 1.5em 1.2em 1em;
   }
 }
