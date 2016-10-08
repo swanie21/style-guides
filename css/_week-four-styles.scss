@@ -85,6 +85,10 @@ footer {
     margin-top: 1em;
   }
 
+  #legal-information {
+    margin-left: 1em;
+  }
+
   #footer-logo {
     display: flex;
     justify-content: center;
@@ -107,7 +111,7 @@ footer {
     justify-content: flex-start;
   }
 
-  #privacy-policy {
+  #privacy-policy, #legal-information {
     margin-left: 0;
   }
 
