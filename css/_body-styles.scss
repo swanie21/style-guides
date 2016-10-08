@@ -16,22 +16,15 @@ a {
   @include link-format;
 }
 
+.button-container {
+  text-align: center;
+}
+
 #show-code-button-one,
 #show-code-button-two,
 #show-code-button-three,
 #show-code-button-four {
   @include code-button;
-  margin-bottom: 2em;
-  button {
-    background-color: lighten($primary-blue-color, 10%);
-    color: $link-text-color;
-    font-family: $font-lora;
-    font-size: 14px;
-    &:hover {
-      background-color: darken($primary-blue-color, 5%);
-      cursor: pointer;
-    }
-  }
 }
 
 #show-code-button-four {

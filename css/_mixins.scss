@@ -16,9 +16,16 @@
 }
 
 @mixin code-button {
-  margin-top: 6em;
-  text-align: center;
-  button:focus {
+  background-color: lighten($primary-blue-color, 10%);
+  color: $link-text-color;
+  font-family: $font-lora;
+  font-size: 14px;
+  margin: 6em 0 2em 0;
+  &:hover {
+    background-color: darken($primary-blue-color, 5%);
+    cursor: pointer;
+  }
+  &:focus {
     outline: none;
   }
 }

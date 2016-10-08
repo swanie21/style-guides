@@ -16,36 +16,26 @@ function hideCodeSnippetFour() {
   $('#code-snippet-four').hide();
 }
 
-$('#show-code-button-one').on('click', function() {
-  $('#code-snippet-one').show();
-});
-
-$('#code-snippet-one').on('mouseleave', function() {
-  hideCodeSnippetOne();
+$('#show-code-button-one').click(function() {
+  $(this).text(function(i, text) { return text === 'Show code' ? 'Hide code' : 'Show code'; });
+  $('#code-snippet-one').toggle();
 });
 
 $('#show-code-button-two').on('click', function() {
-  $('#code-snippet-two').show();
+  $(this).text(function(i, text) { return text === 'Show code' ? 'Hide code' : 'Show code'; });
+  $('#code-snippet-two').toggle();
 });
 
-$('#code-snippet-two').on('mouseleave', function() {
-  hideCodeSnippetTwo();
-});
 
 $('#show-code-button-three').on('click', function() {
-  $('#code-snippet-three').show();
+  $(this).text(function(i, text) { return text === 'Show code' ? 'Hide code' : 'Show code'; });
+  $('#code-snippet-three').toggle();
 });
 
-$('#code-snippet-three').on('mouseleave', function() {
-  hideCodeSnippetThree();
-});
 
 $('#show-code-button-four').on('click', function() {
-  $('#code-snippet-four').show();
-});
-
-$('#code-snippet-four').on('mouseleave', function() {
-  hideCodeSnippetFour();
+  $(this).text(function(i, text) { return text === 'Show code' ? 'Hide code' : 'Show code'; });
+  $('#code-snippet-four').toggle();
 });
 
 hideCodeSnippetOne();
