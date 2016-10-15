@@ -58,6 +58,9 @@ footer {
 
 .social-media {
   margin-left: 0.5em;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 #copyright {
