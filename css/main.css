@@ -271,11 +271,6 @@ nav a:hover {
   margin-bottom: 2.5em;
 }
 
-@media screen and (max-width: 414px) {
-  .content-card {
-    width: 100%;
-  }
-}
 #project-three {
   margin: auto;
   margin-top: 0.5em;
